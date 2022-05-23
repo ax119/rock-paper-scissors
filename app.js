@@ -63,6 +63,25 @@ function game (playerChoice) {
         draw(playerChoice, computerChoice)
         break;
   }
+
+  if (playerScore === 5) {
+      result_p.innerHTML = "VICTORY";
+      playerScore_span.innerHTML = 0;
+      computerScore_span.innerHTML = 0;
+      playerScore = 0;
+      computerScore = 0;
+
+  }
+  if (computerScore === 5) {
+      result_p.innerHTML = "DEFEAT";
+      playerScore_span.innerHTML = 0;
+      computerScore_span.innerHTML = 0;
+      playerScore = 0;
+      computerScore = 0;
+  }
+  else if (result_p.innerHTML === "VICTORY" || "DEFEAT"){
+
+  }
 }
 
 function main() {
